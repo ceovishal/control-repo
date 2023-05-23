@@ -16,4 +16,6 @@ forge 'https://forge.puppet.com'
 #  git:    'https://github.com/puppetlabs/puppetlabs-apache',
 #  branch: 'docs_experiment'
 
-Hello
+mod 'mkcustomfact',
+  git:     'git@github.com:ceovishal/mkcustomfact.git',
+  branch:  'production'
