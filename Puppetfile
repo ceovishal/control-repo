@@ -21,6 +21,7 @@ mod 'mkcustomfact',
   branch:  'production'
 
 mod 'puppetlabs-cem_linux',
-  git:   'git@github.com:ceovishal/puppetlabs-cem_linux.git'
+  git:   'git@github.com:ceovishal/puppetlabs-cem_linux.git',
+  branch: 'main'
   
 
