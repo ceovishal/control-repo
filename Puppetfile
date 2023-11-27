@@ -26,7 +26,7 @@ mod 'puppetlabs-cem_linux',
 
 mod 'puppetlabs-stdlib', '8.6.0'
 mod 'puppetlabs-concat', '8.0.1'
-mod 'puppetlabs-puppet_agent', '4.14.0'
+mod 'puppetlabs-puppet_agent', '4.16.0'
 mod 'puppetlabs-inifile', '6.1.0'
 mod 'puppetlabs-apt', '9.1.0'
 mod 'puppetlabs-facts', '1.4.0'
