@@ -41,5 +41,5 @@ mod 'puppet-logrotate', '6.1.0'
 mod 'puppet-selinux', '3.4.1'
 mod 'puppet-systemd', '4.2.0'
 mod 'puppet-yum', '7.1.0'
-  
+mod 'saz-resolv_conf', '5.1.0'  
 
