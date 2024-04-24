@@ -9,6 +9,7 @@ plan adhoc::myplan(
 
   # Assign a string to a variable
   $my_string = "Hello, world!"
-  notice($my_string)
-  #notify { $my_string: }
+
+  $out::message( $my_string + '')
+
 }
