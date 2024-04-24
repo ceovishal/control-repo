@@ -12,7 +12,7 @@ plan adhoc::myplan(
   $my_string = "Hello, world!"
 
   # Print the value of the variable using the notice function
-  puts($my_string)
+  call($my_string)
 
 
 }
