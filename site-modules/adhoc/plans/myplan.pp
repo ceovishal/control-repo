@@ -11,9 +11,5 @@ plan adhoc::myplan(
   # Assign a string to a variable
   #$my_string = "Hello, world!"
 
-  # Print the value of the variable using the notice function
-  #call($my_string)
-  $a = 'notice'
-  call($a, 'message')
-
+  notify { $my_string: }
 }
