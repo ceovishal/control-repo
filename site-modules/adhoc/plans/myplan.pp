@@ -5,5 +5,6 @@ plan adhoc::myplan(
 ) {
 
   # plan steps go here
+  out::message('Hello, world!')
 
 }
