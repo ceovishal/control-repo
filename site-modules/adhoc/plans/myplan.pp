@@ -6,6 +6,13 @@ plan adhoc::myplan(
 
   # plan steps go here
   #out::message('Hello, world!')
-  notice("Hello world!")
+  #notice("Hello world!")
+
+  # Assign a string to a variable
+  $my_string = "Hello, world!"
+
+  # Print the value of the variable using the notice function
+  notice($my_string)
+
 
 }
