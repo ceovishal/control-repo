@@ -1,0 +1,6 @@
+# Define the Puppet plan
+plan testmsg::my_plan {
+  # Use out::message to print a string to stdout
+  out::message('Hello, world!')
+}
+
