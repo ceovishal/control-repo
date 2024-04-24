@@ -10,6 +10,7 @@ plan adhoc::myplan(
   # Assign a string to a variable
   $my_string = "Hello, world!"
 
-  out::message( $my_string )
+  out::message({ "key": "value" }.to_json)
+  #out::message( $my_string )
   #notice("Your message here")
 }
