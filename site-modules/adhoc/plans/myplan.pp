@@ -7,5 +7,5 @@ plan adhoc::myplan(
   #string_output = "Hello World"
   #print(string_output)
   #puts('Hello')
-  notice sprintf(\"%<x>s : %<y>d\", { 'x' => 'value is', 'y' => 42 })
+  notify { 'Hello World': }
 }
