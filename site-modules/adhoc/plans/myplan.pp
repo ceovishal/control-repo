@@ -4,7 +4,7 @@ plan adhoc::myplan(
   TargetSpec $targets,
 ) {
 
-  string_output = "Hello World"
+  #string_output = "Hello World"
   #print(string_output)
-  notice sprintf('value is')
+  puts('Hello')
 }
