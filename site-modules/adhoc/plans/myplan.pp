@@ -4,10 +4,11 @@ plan adhoc::myplan(
   TargetSpec $targets,
 ) {
 
+  #$my_string = "Hello, world!"
   # plan steps go here
-  #out::message('Hello, world!')
+  out::message('Hello, world!')
 
   # Assign a string to a variable
-  #$my_string = "Hello, world!"
+  
 
 }
