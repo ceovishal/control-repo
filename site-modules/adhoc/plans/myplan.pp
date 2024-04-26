@@ -6,5 +6,5 @@ plan adhoc::myplan(
 
   string_output = "Hello World"
   #print(string_output)
-  notice sprintf($string_output)
+  notice sprintf('value is')
 }
