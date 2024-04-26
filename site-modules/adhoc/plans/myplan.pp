@@ -9,8 +9,8 @@ plan adhoc::myplan(
   #out::message('Hello, world!')
   ptintf("Heelo Mee")
 
-  puts "Hello there!"
-
+  #puts "Hello there!"
+  sprintf("Hello" Sprintf")
   print "123"
 
   
