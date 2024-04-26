@@ -2,13 +2,9 @@
 plan adhoc::myplan(
   # input parameters go here
   TargetSpec $targets,
-  String $message = 'Hello',
 ) {
 
- 
-  message  => $message
-  
-  # Assign a string to a variable
-  
+  string_output = "Hello World"
+  print(string_output)
 
 }
