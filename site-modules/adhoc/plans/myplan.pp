@@ -7,11 +7,7 @@ plan adhoc::myplan(
   #$my_string = "Hello, world!"
   # plan steps go here
   #out::message('Hello, world!')
-  ptintf("Heelo Mee")
-
-  #puts "Hello there!"
-  sprintf("Hello" Sprintf")
-  print "123"
+  printf("Heelo Mee")
 
   
   # Assign a string to a variable
