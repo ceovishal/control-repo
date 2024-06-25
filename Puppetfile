@@ -29,6 +29,7 @@ mod 'puppetlabs-cem_windows',
   git:   'git@github.com:ceovishal/puppetlabs-cem_windows.git',
   branch: 'main'
 
+mod 'puppetlabs-wsus_client', '6.1.0'
 mod 'puppetlabs-peadm', '3.18.1'
 mod 'puppetlabs-stdlib', '8.6.0'
 mod 'puppetlabs-concat', '8.0.1'
