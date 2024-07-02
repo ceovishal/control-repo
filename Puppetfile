@@ -29,6 +29,7 @@ mod 'puppetlabs-cem_windows',
   git:   'git@github.com:ceovishal/puppetlabs-cem_windows.git',
   branch: 'main'
 
+mod 'dylanratcliffe-facter_cache', '1.3.1'
 mod 'puppetlabs-puppet_authorization', '1.0.0'
 mod 'puppetlabs-wsus_client', '6.1.0'
 mod 'puppetlabs-peadm', '3.18.1'
