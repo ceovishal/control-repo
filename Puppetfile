@@ -15,7 +15,7 @@ mod 'puppetlabs-accounts', '8.2.0'
 
 mod 'puppetlabs-sqlserver',
   git:  'https://github.com/puppetlabs/puppetlabs-sqlserver',
-  branch: 'docs_experiment'
+  branch: 'CAT-1939-validation'
 
 
 #mod 'apache',
