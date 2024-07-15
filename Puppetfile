@@ -14,7 +14,7 @@ mod 'puppetlabs-accounts', '8.2.0'
 #  commit: '1b6f89afdde0df7f9433a163d5c4b5328eac5779'
 
 mod 'puppetlabs-sqlserver'
-  git:  'https://github.com/puppetlabs/puppetlabs-sqlserver'
+  git:  'https://github.com/puppetlabs/puppetlabs-sqlserver',
   branch: 'docs_experiment'
 
 
