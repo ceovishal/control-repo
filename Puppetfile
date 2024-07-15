@@ -13,7 +13,7 @@ mod 'puppetlabs-accounts', '8.2.0'
 #  git:    'https://github.com/puppetlabs/puppetlabs-apache',
 #  commit: '1b6f89afdde0df7f9433a163d5c4b5328eac5779'
 
-mod 'puppetlabs-sqlserver'
+mod 'puppetlabs-sqlserver',
   git:  'https://github.com/puppetlabs/puppetlabs-sqlserver',
   branch: 'docs_experiment'
 
