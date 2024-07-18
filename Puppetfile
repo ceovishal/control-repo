@@ -34,7 +34,9 @@ mod 'puppetlabs-cem_windows',
   git:   'git@github.com:ceovishal/puppetlabs-cem_windows.git',
   branch: 'main'
 
-mod 'puppetlabs/cem_linux', '1.5.0'
+mod 'puppetlabs/sce_linux', '1.5.0'
+
+#mod 'puppetlabs/cem_linux', '1.5.0'
 mod 'dylanratcliffe-facter_cache', '1.3.1'
 mod 'puppetlabs-puppet_authorization', '1.0.0'
 mod 'puppetlabs-wsus_client', '6.1.0'
