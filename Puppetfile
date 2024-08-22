@@ -41,6 +41,7 @@ mod 'puppetlabs-cem_windows',
   branch: 'main'
 
 #mod 'puppetlabs/sce_linux', '2.0.0'
+mod 'puppetlabs-cd4pe', '3.3.0'
 
 #mod 'puppetlabs/sce_linux', '1.5.0'
 #mod 'puppetlabs/cem_linux', '1.5.0'
