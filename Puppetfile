@@ -24,9 +24,9 @@ mod 'mkcustomfact',
   :git => 'https://github.com/ceovishal/mkcustomfact.git',
   :branch => :control_branch
 
-mod 'puppetlabs-cem_linux',
-  git:   'git@github.com:ceovishal/puppetlabs-cem_linux.git',
-  branch: 'main'
+#mod 'puppetlabs-cem_linux',
+#  git:   'git@github.com:ceovishal/puppetlabs-cem_linux.git',
+#  branch: 'main'
 
 mod 'puppetlabs-stdlib', '8.6.0'
 mod 'puppetlabs-concat', '8.0.1'
