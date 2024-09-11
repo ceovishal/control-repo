@@ -21,7 +21,7 @@ forge 'https://forge.puppet.com'
 #  branch:  'production'
 
 mod 'mkcustomfact-1_1',
-  :git => 'https://github.com/ceovishal/mkcustomfact.git',
+  :git => 'https://github.com/ceovishal/mkcustomfact1.git',
   :branch => :control_branch
 
 #mod 'puppetlabs-cem_linux',
