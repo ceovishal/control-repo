@@ -16,9 +16,13 @@ forge 'https://forge.puppet.com'
 #  git:    'https://github.com/puppetlabs/puppetlabs-apache',
 #  branch: 'docs_experiment'
 
+#mod 'mkcustomfact',
+#  git:     'git@github.com:ceovishal/mkcustomfact.git',
+#  branch:  'production'
+
 mod 'mkcustomfact',
-  git:     'git@github.com:ceovishal/mkcustomfact.git',
-  branch:  'production'
+  :git => 'https://github.com/ceovishal/mkcustomfact.git',
+  :branch => :control_branch
 
 mod 'puppetlabs-cem_linux',
   git:   'git@github.com:ceovishal/puppetlabs-cem_linux.git',
