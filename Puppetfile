@@ -20,7 +20,7 @@ forge 'https://forge.puppet.com'
 #  git:     'git@github.com:ceovishal/mkcustomfact.git',
 #  branch:  'production'
 
-mod 'mkcustomfact-1',
+mod 'mkcustomfact-1_1',
   :git => 'https://github.com/ceovishal/mkcustomfact.git',
   :branch => :control_branch
 
