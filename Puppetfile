@@ -30,16 +30,19 @@ mod 'mkcustomfact',
 mod 'puppetlabs-sce_linux',
   git:   'git@github.com:ceovishal/puppetlabs-sce_linux.git',
   branch: 'main' 
-  :tag => 'v1.5.0'
+#  :tag => 'v1.5.0'
 
+mod 'puppetlabs-sce_windows',
+  git:   'git@github.com:ceovishal/puppetlabs-sce_windows.git',
+  branch: 'main'
 
 #mod 'puppetlabs-cem_linux',
 #  git:   'git@github.com:ceovishal/puppetlabs-cem_linux.git',
 #  branch: 'main'
 
-mod 'puppetlabs-cem_windows',
-  git:   'git@github.com:ceovishal/puppetlabs-cem_windows.git',
-  branch: 'main'
+#mod 'puppetlabs-cem_windows',
+#  git:   'git@github.com:ceovishal/puppetlabs-cem_windows.git',
+#  branch: 'main'
 
 #mod 'puppetlabs/sce_linux', '2.0.0'
 mod 'puppetlabs-cd4pe', '3.3.0'
