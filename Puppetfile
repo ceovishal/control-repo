@@ -27,10 +27,10 @@ mod 'mkcustomfact',
   git:     'git@github.com:ceovishal/mkcustomfact.git',
   branch:  'production'
 
-#mod 'puppetlabs-sce_linux',
-#  git:   'git@github.com:ceovishal/puppetlabs-sce_linux.git',
-#  branch: 'main' 
-#:tag => 'v1.5.0'
+mod 'puppetlabs-sce_linux',
+  git:   'git@github.com:ceovishal/puppetlabs-sce_linux.git',
+  branch: 'main' 
+  :tag => 'v1.5.0'
 
 
 #mod 'puppetlabs-cem_linux',
@@ -46,8 +46,8 @@ mod 'puppetlabs-cd4pe', '3.3.0'
 
 #mod 'puppetlabs/sce_linux', '1.5.0'
 #mod 'puppetlabs/cem_linux', '1.5.0'
-mod 'puppetlabs-sce_windows', '2.0.0'
-mod 'puppetlabs-sce_linux', '2.1.0'
+#mod 'puppetlabs-sce_windows', '2.0.0'
+#mod 'puppetlabs-sce_linux', '2.1.0'
 
 mod 'dylanratcliffe-facter_cache', '1.3.1'
 mod 'puppetlabs-puppet_authorization', '1.0.0'
