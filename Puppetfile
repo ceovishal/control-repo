@@ -23,9 +23,9 @@ mod 'apache',
 #  git:    'https://github.com/puppetlabs/puppetlabs-apache',
 #  branch: 'docs_experiment'
 
-mod 'mkcustomfact',
-  git:     'git@github.com:ceovishal/mkcustomfact.git',
-  branch:  'production'
+#mod 'mkcustomfact',
+#  git:     'git@github.com:ceovishal/mkcustomfact.git',
+#  branch:  'production'
 
 mod 'puppetlabs-sce_linux',
   git:   'git@github.com:ceovishal/puppetlabs-sce_linux.git',
