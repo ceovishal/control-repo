@@ -27,6 +27,11 @@ mod 'mkcustomfact',
   git:     'git@github.com:ceovishal/mkcustomfact.git',
   branch:  'production'
 
+mod 'filecopy',
+  git:     'git@github.com:ceovishal/filecopy.git',
+  branch:  'production'
+
+
 mod 'puppetlabs-sce_linux',
   git:   'git@github.com:ceovishal/puppetlabs-sce_linux.git',
   branch: 'main' 
