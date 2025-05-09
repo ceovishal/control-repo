@@ -32,14 +32,14 @@ mod 'filecopy',
   branch:  'production'
 
 
-mod 'puppetlabs-sce_linux',
-  git:   'git@github.com:ceovishal/puppetlabs-sce_linux.git',
-  branch: 'main' 
+#mod 'puppetlabs-sce_linux',
+#  git:   'git@github.com:ceovishal/puppetlabs-sce_linux.git',
+#  branch: 'main' 
 #  :tag => 'v1.5.0'
 
-mod 'puppetlabs-sce_windows',
-  git:   'git@github.com:ceovishal/puppetlabs-sce_windows.git',
-  branch: 'main'
+#mod 'puppetlabs-sce_windows',
+#  git:   'git@github.com:ceovishal/puppetlabs-sce_windows.git',
+#  branch: 'main'
   
 mod 'puppet-lint',
   git: 'git@github.com:ceovishal/puppet-lint.git',
