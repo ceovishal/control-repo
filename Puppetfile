@@ -56,6 +56,10 @@ mod 'puppet-lint',
 #mod 'puppetlabs/sce_linux', '2.0.0'
 mod 'puppetlabs-cd4pe', '3.3.0'
 
+
+# added below module check agent status
+mod 'puppetlabs-pe_status_check', '4.5.1' 
+
 #mod 'puppetlabs/sce_linux', '1.5.0'
 #mod 'puppetlabs/cem_linux', '1.5.0'
 #mod 'puppetlabs-sce_windows', '2.0.0'
