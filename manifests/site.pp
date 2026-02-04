@@ -31,29 +31,24 @@ File { backup => false }
 #}
 node 'inert-clot.delivery.puppetlabs.net' {
 
-  # Ensure the puppetlabs-sqlserver module is installed on the master
-  # and pluginsync is enabled on the agent.
-
   sqlserver_instance { 'MSSQLSERVER':
-    ensure                 => present,
-    # Path to the root of the SQL Server installation media OR a share
-    # that contains Setup.exe and required payloads.
-    # Example:
-    # source => 'C:\\Installers\\SQLServer2019',
-    source                 => 'C:\\Installers\\SQLServer', 
+    ensure                => present,
+    # IMPORTANT: Use a real media location that contains Setup.exe and payloads.
+    # Backslashes MUST be doubled. Do NOT use 'C:\'
+    source                => 'C:\\Installers\\SQLServer',
 
-    # Use correct feature IDs. For SQL Database Engine use 'SQLENGINE'.
-    features               => ['SQLENGINE'],
+    # Correct feature for Database Engine
+    features              => ['SQLENGINE'],
 
     # Mixed mode authentication
-    security_mode          => 'SQL',
-    sa_pwd                 => 'p@ssw0rd!!',
+    security_mode         => 'SQL',
+    sa_pwd                => 'p@ssw0rd!!',
 
-    # Local or domain accounts that should be sysadmin
-    sql_sysadmin_accounts  => ['myuser'],
+    # Sysadmin principals
+    sql_sysadmin_accounts => ['myuser'],
 
-    # Install switches must be strings. Paths can be single-quoted.
-    install_switches       => {
+    # Switch values should be strings; paths must escape backslashes
+    install_switches      => {
       'TCPENABLED'           => '1',
       'SQLBACKUPDIR'         => 'C:\\MSSQLSERVER\\backupdir',
       'SQLTEMPDBDIR'         => 'C:\\MSSQLSERVER\\tempdbdir',
@@ -65,6 +60,3 @@ node 'inert-clot.delivery.puppetlabs.net' {
   }
 
 }
-
-}
-
