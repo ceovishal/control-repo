@@ -31,21 +31,39 @@ File { backup => false }
 #}
 node 'inert-clot.delivery.puppetlabs.net' {
 
-  sqlserver_instance{ 'MSSQLSERVER':
-  source                  => 'C:\',
-  features                => ['SQL'],
-  security_mode           => 'SQL',
-  sa_pwd                  => 'p@ssw0rd!!',
-  sql_sysadmin_accounts   => ['myuser'],
-  install_switches        => {
-    'TCPENABLED'          => 1,
-    'SQLBACKUPDIR'        => 'C:\\MSSQLSERVER\\backupdir',
-    'SQLTEMPDBDIR'        => 'C:\\MSSQLSERVER\\tempdbdir',
-    'INSTALLSQLDATADIR'   => 'C:\\MSSQLSERVER\\datadir',
-    'INSTANCEDIR'         => 'C:\\Program Files\\Microsoft SQL Server',
-    'INSTALLSHAREDDIR'    => 'C:\\Program Files\\Microsoft SQL Server',
-    'INSTALLSHAREDWOWDIR' => 'C:\\Program Files (x86)\\Microsoft SQL Server',
+  # Ensure the puppetlabs-sqlserver module is installed on the master
+  # and pluginsync is enabled on the agent.
+
+  sqlserver_instance { 'MSSQLSERVER':
+    ensure                 => present,
+    # Path to the root of the SQL Server installation media OR a share
+    # that contains Setup.exe and required payloads.
+    # Example:
+    # source => 'C:\\Installers\\SQLServer2019',
+    source                 => 'C:\\Installers\\SQLServer', 
+
+    # Use correct feature IDs. For SQL Database Engine use 'SQLENGINE'.
+    features               => ['SQLENGINE'],
+
+    # Mixed mode authentication
+    security_mode          => 'SQL',
+    sa_pwd                 => 'p@ssw0rd!!',
+
+    # Local or domain accounts that should be sysadmin
+    sql_sysadmin_accounts  => ['myuser'],
+
+    # Install switches must be strings. Paths can be single-quoted.
+    install_switches       => {
+      'TCPENABLED'           => '1',
+      'SQLBACKUPDIR'         => 'C:\\MSSQLSERVER\\backupdir',
+      'SQLTEMPDBDIR'         => 'C:\\MSSQLSERVER\\tempdbdir',
+      'INSTALLSQLDATADIR'    => 'C:\\MSSQLSERVER\\datadir',
+      'INSTANCEDIR'          => 'C:\\Program Files\\Microsoft SQL Server',
+      'INSTALLSHAREDDIR'     => 'C:\\Program Files\\Microsoft SQL Server',
+      'INSTALLSHAREDWOWDIR'  => 'C:\\Program Files (x86)\\Microsoft SQL Server',
+    },
   }
+
 }
 
 }
