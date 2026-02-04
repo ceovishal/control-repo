@@ -18,7 +18,7 @@ mod 'apache',
 #  git:  'https://github.com/puppetlabs/puppetlabs-sqlserver',
 #  branch: 'CAT-1939-validation'
 
-mod '
+mod 'puppetlabs-sqlserver',
   git:  'https://github.com/puppetlabs/puppetlabs-sqlserver'
   commit: '944fcbbc9d1e840b7c4bcc984be283862818300d'
 
