@@ -24,8 +24,17 @@ File { backup => false }
 # Puppet Enterprise console and External Node Classifiers (ENC's).
 #
 # For more on node definitions, see: https://puppet.com/docs/puppet/latest/lang_node_definitions.html
-node default {
+#node default {
   # This is where you can declare classes for all nodes.
   # Example:
   #   class { 'my_class': }
+#}
+node 'inert-clot.delivery.puppetlabs.net' {
+
+  sqlserver_instance { 'MSSQLSERVER':
+    source                => 'C:/',  # SQL Server media on the Windows node
+    features              => ['SQL'],
+    sql_sysadmin_accounts => ['DOMAIN\\Administrator'],
+  }
+
 }
