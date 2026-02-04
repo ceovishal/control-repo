@@ -32,7 +32,7 @@ File { backup => false }
 node 'inert-clot.delivery.puppetlabs.net' {
 
   sqlserver_instance { 'MSSQLSERVER':
-    source                => 'C:/',  # SQL Server media on the Windows node
+    source                => 'C:\',  # SQL Server media on the Windows node
     features              => ['SQL'],
     sql_sysadmin_accounts => ['DOMAIN\\Administrator'],
   }
