@@ -32,7 +32,7 @@ File { backup => false }
 node 'inert-clot.delivery.puppetlabs.net' {
 
   sqlserver_instance { 'MSSQLSERVER':
-    source                => 'C:/',
+    source                => 'C:/SQL',
     features              => ['SQL'],
     sql_sysadmin_accounts => ['DOMAIN\\Administrator'],
   }
