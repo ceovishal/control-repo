@@ -30,33 +30,5 @@ File { backup => false }
   #   class { 'my_class': }
 #}
 node 'inert-clot.delivery.puppetlabs.net' {
-
-  sqlserver_instance { 'MSSQLSERVER':
-    ensure                => present,
-    # IMPORTANT: Use a real media location that contains Setup.exe and payloads.
-    # Backslashes MUST be doubled. Do NOT use 'C:\'
-    source                => 'C:\\Installers\\SQLServer',
-
-    # Correct feature for Database Engine
-    features              => ['SQLENGINE'],
-
-    # Mixed mode authentication
-    security_mode         => 'SQL',
-    sa_pwd                => 'p@ssw0rd!!',
-
-    # Sysadmin principals
-    sql_sysadmin_accounts => ['myuser'],
-
-    # Switch values should be strings; paths must escape backslashes
-    install_switches      => {
-      'TCPENABLED'           => '1',
-      'SQLBACKUPDIR'         => 'C:\\MSSQLSERVER\\backupdir',
-      'SQLTEMPDBDIR'         => 'C:\\MSSQLSERVER\\tempdbdir',
-      'INSTALLSQLDATADIR'    => 'C:\\MSSQLSERVER\\datadir',
-      'INSTANCEDIR'          => 'C:\\Program Files\\Microsoft SQL Server',
-      'INSTALLSHAREDDIR'     => 'C:\\Program Files\\Microsoft SQL Server',
-      'INSTALLSHAREDWOWDIR'  => 'C:\\Program Files (x86)\\Microsoft SQL Server',
-    },
-  }
-
+  include profile::sqlserver_test
 }
